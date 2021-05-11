@@ -1,0 +1,11 @@
+node_modules
+ios
+android
+**/.{git,svn,hg}/**
+./.{git,svn,hg}/**
+*.json
+*.php
+*.md
+*.asax
+*.csproj
+*.sln
