@@ -1,6 +1,6 @@
 {
   "root": true,
-  "extends": ["prettier", "@react-native-community"],
+  "extends": ["prettier"],
   "plugins": ["prettier", "react-hooks"],
   "parser": "babel-eslint",
   "parserOptions": {
