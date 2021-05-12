@@ -6,6 +6,8 @@ import AppButton from "./../components/common/button"
 
 import {Colors} from "./../libraries"
 
+import Logo from "./../img/icons/link.svg"
+
 const StartPage = () => {
   return (
     <AppLayout>
@@ -15,6 +17,8 @@ const StartPage = () => {
           alert("test message")
         }}
       />
+
+      <Logo style={styles.logo} />
 
       <Text style={styles.text}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem lacus, dapibus vitae laoreet eu, porttitor non
@@ -72,6 +76,11 @@ const styles = StyleSheet.create({
   text: {
     color: Colors.white,
     fontSize: 16
+  },
+  logo: {
+    color: "red",
+    width: 50,
+    height: 50
   }
 })
 
