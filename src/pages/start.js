@@ -2,12 +2,20 @@ import React from "react"
 import {StyleSheet, Text, useColorScheme, View} from "react-native"
 
 import AppLayout from "./../layout"
+import AppButton from "./../components/common/button"
 
-import Colors from "./../libraries/colors"
+import {Colors} from "./../libraries"
 
 const StartPage = () => {
   return (
     <AppLayout>
+      <AppButton
+        text='Lorem ipsum'
+        onPress={() => {
+          alert("test message")
+        }}
+      />
+
       <Text style={styles.text}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem lacus, dapibus vitae laoreet eu, porttitor non
         sem. Phasellus sit amet augue aliquam, lobortis ex in, laoreet diam. Donec eget metus dui. Sed non sem dui.

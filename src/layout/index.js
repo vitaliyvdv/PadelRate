@@ -1,7 +1,7 @@
 import React from "react"
 import {SafeAreaView, ScrollView, StatusBar, StyleSheet, useColorScheme, View} from "react-native"
 
-import Colors from "./../libraries/colors"
+import {Colors} from "./../libraries"
 
 const AppLayout = ({children}) => {
   return (
