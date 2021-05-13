@@ -1,14 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {StyleSheet, Text, TouchableHighlight, View, Image} from "react-native"
+import {StyleSheet, Text, TouchableHighlight, View} from "react-native"
 
 import {Colors, Borders} from "./../../../libraries"
 
 const Icon = ({source}) => {
-  return <View style={styles.icon}>{source && <Image style={styles.image} source={source} />}</View>
+  return <View style={styles.icon}>{source}</View>
 }
 
-const AppButton = ({onPress, text, color, variant, size, startIcon, endIcon, icon}) => {
+const AppButton = ({onPress, text, color, variant, size, startIcon, endIcon}) => {
   return (
     <View style={styles.root}>
       <TouchableHighlight onPress={onPress} color={Colors.white} activeOpacity={0.9}>
@@ -57,14 +57,9 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
   icon: {
-    position: "relative"
-  },
-  image: {
-    height: 24,
-    width: "auto",
-    borderWidth: 1,
-    borderColor: "red",
-    borderStyle: "solid"
+    position: "relative",
+    width: 24,
+    height: 24
   }
 })
 

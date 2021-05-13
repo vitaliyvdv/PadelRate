@@ -1,5 +1,5 @@
 import React from "react"
-import {StyleSheet, Text, useColorScheme, View} from "react-native"
+import {StyleSheet, Text} from "react-native"
 
 import AppLayout from "./../layout"
 import AppButton from "./../components/common/button"
@@ -16,9 +16,8 @@ const StartPage = () => {
         onPress={() => {
           alert("test message")
         }}
+        startIcon={<Logo />}
       />
-
-      <Logo style={styles.logo} />
 
       <Text style={styles.text}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem lacus, dapibus vitae laoreet eu, porttitor non
