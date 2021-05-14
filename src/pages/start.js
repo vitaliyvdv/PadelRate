@@ -3,20 +3,22 @@ import {StyleSheet, Text} from "react-native"
 
 import AppLayout from "./../layout"
 import AppButton from "./../components/common/button"
+import Logo from "./../components/common/logo"
 
 import {Colors} from "./../libraries"
 
-import Logo from "./../img/icons/link.svg"
+import LogoSVG from "./../img/icons/link.svg"
 
 const StartPage = () => {
   return (
     <AppLayout>
+      <Logo />
       <AppButton
         text='Lorem ipsum'
         onPress={() => {
           alert("test message")
         }}
-        startIcon={<Logo />}
+        startIcon={<LogoSVG />}
       />
 
       <Text style={styles.text}>

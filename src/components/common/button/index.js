@@ -60,7 +60,7 @@ const AppButton = ({onPress, text, color, variant, size, startIcon, endIcon, dis
               TextSize(size),
               variant == "outlined" && TextColor(color),
               variant == "text" && TextColor(color),
-              variant == "contained" && {color: Colors.white}
+              variant == "contained" && {color: "rgba(255,255,255, 0.8)"}
             ]}
           >
             {text}
